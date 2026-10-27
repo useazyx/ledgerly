@@ -23,8 +23,8 @@ import { buildCategoryMatcher } from "../src/utils/categoryMatcher.js"
 import { listMonths, monthRange } from "../src/utils/month.js"
 import { hashPassword } from "../src/utils/password.js"
 
-export const DEMO_EMAIL = "ana@saldo.dev"
-export const DEMO_PASSWORD = "saldo123"
+export const DEMO_EMAIL = "ana@ledgerly.dev"
+export const DEMO_PASSWORD = "ledgerly123"
 
 const MONTHS_OF_HISTORY = 4
 

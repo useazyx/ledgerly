@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * Cores do Saldo: fundo e texto neutros, um azul de ação e cor forte só onde tem significado
+ * Cores do Ledgerly: fundo e texto neutros, um azul de ação e cor forte só onde tem significado
  * (entrada, saída, alerta). As 8 cores de categoria são a paleta validada pra daltonismo,
  * com um tom próprio pro tema escuro (não é só inverter).
  */

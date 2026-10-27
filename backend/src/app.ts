@@ -77,7 +77,7 @@ export async function buildApp({ rateLimit = env.NODE_ENV !== "test" }: BuildApp
   await app.register(swagger, {
     openapi: {
       info: {
-        title: "Saldo API",
+        title: "Ledgerly API",
         description: "Finanças pessoais a partir do extrato do banco: importação de CSV, categorias, relatórios e orçamentos",
         version: "1.0.0",
       },

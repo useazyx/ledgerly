@@ -1,4 +1,4 @@
-// schema.prisma - O mapa do banco do Saldo
+// schema.prisma - O mapa do banco do Ledgerly
 // # Pra que serve?
 // - Guardar contas, categorias e cada lançamento do extrato (valor em centavos, negativo = saída)
 // - Registrar cada importação de CSV e as regras que categorizam sozinhas

@@ -1,5 +1,5 @@
 {
-  "name": "saldo-backend",
+  "name": "ledgerly-backend",
   "version": "1.0.0",
   "description": "Personal finance API with CSV bank statement import",
   "type": "module",

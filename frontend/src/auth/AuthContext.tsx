@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { ApiError, apiRequest, type RequestOptions } from "../lib/api"
 import type { User } from "../lib/types"
 
-const TOKEN_KEY = "saldo.token"
+const TOKEN_KEY = "ledgerly.token"
 
 type AuthStatus = "loading" | "authenticated" | "anonymous"
 

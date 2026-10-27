@@ -1,4 +1,4 @@
-// Os formatos que a API do Saldo devolve (espelham os schemas do backend)
+// Os formatos que a API do Ledgerly devolve (espelham os schemas do backend)
 
 export type CategoryColor = "blue" | "orange" | "aqua" | "yellow" | "magenta" | "green" | "violet" | "red"
 export type CategoryKind = "INCOME" | "EXPENSE"

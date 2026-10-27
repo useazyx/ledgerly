@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event"
 import { afterEach, describe, expect, it, vi } from "vitest"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const ANA = { id: "u1", name: "Ana Souza", email: "ana@saldo.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const ANA = { id: "u1", name: "Ana Souza", email: "ana@ledgerly.dev", created_at: "2026-09-01T00:00:00.000Z" }
 
 describe("login", () => {
   afterEach(() => {
@@ -22,7 +22,7 @@ describe("login", () => {
     mockApi(() => ({ status: 401, body: { error: "InvalidCredentials", message: "E-mail ou senha incorretos" } }))
     renderApp("/entrar")
 
-    await userEvent.type(screen.getByLabelText("E-mail"), "ana@saldo.dev")
+    await userEvent.type(screen.getByLabelText("E-mail"), "ana@ledgerly.dev")
     await userEvent.type(screen.getByLabelText("Senha"), "errada")
     await userEvent.click(screen.getByRole("button", { name: "Entrar" }))
 
@@ -43,8 +43,8 @@ describe("login", () => {
 
     expect(await screen.findByRole("heading", { name: "Olá, Ana" })).toBeInTheDocument()
     const [, init] = fetchMock.mock.calls[0]
-    expect(JSON.parse(String(init?.body))).toEqual({ email: "ana@saldo.dev", password: "saldo123" })
-    expect(localStorage.getItem("saldo.token")).toBe("t0k3n")
+    expect(JSON.parse(String(init?.body))).toEqual({ email: "ana@ledgerly.dev", password: "ledgerly123" })
+    expect(localStorage.getItem("ledgerly.token")).toBe("t0k3n")
   })
 
   it("validates the sign up form before calling the API", async () => {

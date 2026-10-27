@@ -52,7 +52,7 @@ export const authHeader = (token: string) => ({ authorization: `Bearer ${token}`
 
 // Monta um upload multipart na mão (o inject não tem FormData), já com o token
 export function multipartFile(token: string, fileName: string, content: string | Buffer) {
-  const boundary = "----saldo-test-boundary"
+  const boundary = "----ledgerly-test-boundary"
   const head = Buffer.from(
     `--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="${fileName}"\r\nContent-Type: text/csv\r\n\r\n`
   )

@@ -33,7 +33,7 @@ export function Layout() {
     <div className="min-h-dvh md:grid md:grid-cols-[232px_1fr]">
       {/* Barra lateral (tela média pra cima) */}
       <aside className="sticky top-0 hidden h-dvh flex-col border-r border-border px-3 py-5 md:flex">
-        <p className="px-3 text-lg font-semibold tracking-tight text-ink">Saldo</p>
+        <p className="px-3 text-lg font-semibold tracking-tight text-ink">Ledgerly</p>
         <nav aria-label="Principal" className="mt-6 flex flex-col gap-1">
           {NAV_ITEMS.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === "/"} className={linkClass}>
@@ -57,7 +57,7 @@ export function Layout() {
 
       {/* Topo (celular) */}
       <header className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-page/95 px-4 py-3 md:hidden">
-        <p className="text-lg font-semibold tracking-tight text-ink">Saldo</p>
+        <p className="text-lg font-semibold tracking-tight text-ink">Ledgerly</p>
         <button type="button" onClick={logout} aria-label="Sair" className="rounded-lg p-2 text-ink-secondary hover:bg-surface">
           <LogOut aria-hidden className="size-5" />
         </button>

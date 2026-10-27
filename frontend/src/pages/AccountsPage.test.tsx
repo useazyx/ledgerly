@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event"
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const ANA = { id: "u1", name: "Ana Souza", email: "ana@saldo.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const ANA = { id: "u1", name: "Ana Souza", email: "ana@ledgerly.dev", created_at: "2026-09-01T00:00:00.000Z" }
 const ACCOUNTS = [
   { id: "a1", name: "Conta Nubank", created_at: "", balance_cents: 424250, transactions_count: 32 },
   { id: "a2", name: "Cartão Nubank", created_at: "", balance_cents: -98760, transactions_count: 1 },
@@ -13,7 +13,7 @@ describe("accounts page", () => {
   let fetchMock: ReturnType<typeof mockApi>
 
   beforeEach(() => {
-    localStorage.setItem("saldo.token", "t0k3n")
+    localStorage.setItem("ledgerly.token", "t0k3n")
     fetchMock = mockApi((url, init) => {
       if (url.includes("/auth/me")) return { status: 200, body: ANA }
       if (url.includes("/accounts") && init.method === "POST") return { status: 201, body: ACCOUNTS[0] }

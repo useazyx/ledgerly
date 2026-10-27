@@ -3,7 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { currentMonth, shiftMonth } from "../lib/format"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const ANA = { id: "u1", name: "Ana Souza", email: "ana@saldo.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const ANA = { id: "u1", name: "Ana Souza", email: "ana@ledgerly.dev", created_at: "2026-09-01T00:00:00.000Z" }
 const MONTH = currentMonth()
 const PREVIOUS = shiftMonth(MONTH, -1)
 
@@ -42,7 +42,7 @@ const BUDGETS = [
 
 describe("dashboard", () => {
   beforeEach(() => {
-    localStorage.setItem("saldo.token", "t0k3n")
+    localStorage.setItem("ledgerly.token", "t0k3n")
     mockApi((url) => {
       if (url.includes("/auth/me")) return { status: 200, body: ANA }
       if (url.includes("/reports/summary")) return { status: 200, body: SUMMARY }
