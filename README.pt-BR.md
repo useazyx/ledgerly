@@ -1,4 +1,4 @@
-# Saldo
+# Ledgerly
 
 Controle financeiro pessoal a partir do extrato do banco. Você importa o CSV que o banco exporta,
 regras simples categorizam, e dá pra ver pra onde o dinheiro foi em cada mês: gastos por categoria,
@@ -31,7 +31,7 @@ cria o banco, aplica as migrations e carrega uma conta de demonstração. O fron
 pro backend, então não tem mais nada pra configurar. Se o seu usuário do Postgres não for
 `postgres/postgres`, ajuste o `DATABASE_URL` em `backend/.env`.
 
-**Conta de demonstração:** `ana@saldo.dev` / `saldo123`, com conta corrente, cartão de crédito,
+**Conta de demonstração:** `ana@ledgerly.dev` / `ledgerly123`, com conta corrente, cartão de crédito,
 regras, quatro meses de lançamentos e alguns orçamentos (um deles já estourado).
 
 ## O que faz

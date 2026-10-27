@@ -1,4 +1,4 @@
-# Saldo
+# Ledgerly
 
 Personal finance app built around the bank statement. Import the CSV your bank exports, let
 simple rules categorize it, and see where the money went each month: spending by category, the
@@ -33,7 +33,7 @@ the database, applies the migrations and loads a demo account. The frontend prox
 backend, so there is nothing else to configure. If your Postgres user isn't `postgres/postgres`,
 change `DATABASE_URL` in `backend/.env`.
 
-**Demo account:** `ana@saldo.dev` / `saldo123`, with a checking account, a credit card, rules,
+**Demo account:** `ana@ledgerly.dev` / `ledgerly123`, with a checking account, a credit card, rules,
 four months of transactions and a few budgets (one of them already over the limit).
 
 ## What it does
